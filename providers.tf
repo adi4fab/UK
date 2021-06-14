@@ -30,9 +30,5 @@ resource "aws_s3_bucket" "bucket" {
 
 
 terraform {
-  backend "s3" {
-    bucket = "statefilebucketforukterrform"
-    key    = "statefile"
-    region = "us-east-1"
-  }
+  backend "s3" {}
 }
